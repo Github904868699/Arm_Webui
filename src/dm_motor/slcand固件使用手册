@@ -1,0 +1,43 @@
+#使用slcand固件，完成socketcan_bridge功能包，在ROS中完成CAN通讯任务
+
+#查询串口设备，这里的x有可能是0、1、2...
+ls /dev/ttyACMx
+#将串口映射为can1，并设置波特率为1M
+sudo slcand -o -c -s8 /dev/ttyACM0 can1
+
+#波特率对应设置如下：
+-s0	10k
+-s1	20k
+-s2	50k
+-s3	100k
+-s4	125k
+-s5	250k
+-s6	500k
+-s7	750k
+-s8	1M
+
+#启用can
+sudo ifconfig can1 up
+sudo ifconfig can1 txqueuelen 1000
+
+
+#配置txqueuelen的传输数据缓冲区的存储长度
+sudo ifconfig can1 txqueuelen 1000
+
+#ID001的DM电机启动
+cansend can1 001#FFFFFFFFFFFFFFFc
+
+#启动id001 002 003 004 005的电机
+
+#结束
+
+
+
+备注：
+#ID001的DM电机关闭指令
+cansend can1 001#FFFFFFFFFFFFFFFD
+
+#ID001的DM电机置零点指令
+cansend can1 001#FFFFFFFFFFFFFFFE
+
+# #sudo chmod 777 /dev/ttyCH341USB0 

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- 启动Gazebo  -->
+    <include file="$(find 003_moveit_config)/launch/003_gazebo_world.launch" />   
+
+    <!-- 启动Gazebo controllers -->
+    <include file="$(find 003_moveit_config)/launch/003_gazebo_trajectory_controller.launch" /> 
+    
+    <!-- 启动demo.launch  -->
+    <include file="$(find 003_moveit_config)/launch/demo.launch" />   
+    
+    <!-- 启动图形化界面中的RobotModel正常显示  -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+</launch>

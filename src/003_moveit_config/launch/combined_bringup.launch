@@ -1,0 +1,10 @@
+<launch>
+    <!-- 启动 dm_motor -->
+    <include file="$(find dm_motor)/launch/dm_motor.launch" />
+
+    <!-- 启动 003_moveit_config -->
+    <include file="$(find 003_moveit_config)/launch/003_bringup_moveit.launch" />
+
+    <!-- 启动 armcontrol_demo_pkg -->
+    <include file="$(find armcontrol_demo_pkg)/launch/armcontrol_demo.launch" />
+</launch>

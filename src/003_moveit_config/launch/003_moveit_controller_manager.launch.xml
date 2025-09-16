@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- 这个也是lyf写的文件，参考书上356页顶部，参考链接https://blog.csdn.net/qq_33328642/article/details/117843831 -->
+  <!-- Set the param that trajectory_execution_manager needs to find the controller plugin -->
+  <arg name="moveit_controller_manager" default="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
+  <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+
+  <!-- load controller_list -->
+  <!-- Arbotix -->
+  <!-- <rosparam file="$(find marm_moveit_config)/config/controllers.yaml"/> -->
+  <!-- Gazebo -->
+  <rosparam file="$(find 003_moveit_config)/config/003_gazebo_controllers.yaml"/>
+</launch>

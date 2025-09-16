@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "bitset": "cpp",
+        "forward_list": "cpp",
+        "fstream": "cpp",
+        "ostream": "cpp",
+        "*.txx": "cpp",
+        "regex": "cpp"
+    }
+}

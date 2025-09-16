@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- 启动Gazebo  -->
+    <include file="$(find 003_moveit_config)/launch/003_gazebo_world.launch" />   
+
+    <!-- 启动Gazebo controllers -->
+    <include file="$(find 003_moveit_config)/launch/003_gazebo_controller.launch" />   
+
+</launch>

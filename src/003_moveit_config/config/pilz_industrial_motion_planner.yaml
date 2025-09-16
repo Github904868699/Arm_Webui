@@ -1,0 +1,14 @@
+planner_configs:
+  PTP:
+    type: PTP
+  LIN:
+    type: LIN
+  CIRC:
+    type: CIRC
+
+arm:
+  default_planner_config: PTP
+  planner_configs:
+    - PTP
+    - LIN
+    - CIRC

@@ -1,0 +1,14 @@
+controller_manager_ns: controller_manager
+controller_list:
+  - name: arm/arm_joint_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    publish_rate: 100
+    default: true
+    joints:
+      - Joint_1
+      - Joint_2
+      - Joint_3
+      - Joint_4
+      - Joint_5
+      - Joint_6

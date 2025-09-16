@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ROS/roboarm3_ws/devel
+
+Name: robot_arm
+Description: Description of robot_arm
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

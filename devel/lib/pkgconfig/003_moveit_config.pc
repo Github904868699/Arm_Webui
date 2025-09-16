@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ROS/roboarm3_ws/devel
+
+Name: 003_moveit_config
+Description: Description of 003_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime

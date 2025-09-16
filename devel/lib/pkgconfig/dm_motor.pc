@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ROS/roboarm3_ws/devel
+
+Name: dm_motor
+Description: Description of dm_motor
+Version: 0.0.1
+Cflags: -I/home/ubuntu/ROS/roboarm3_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp roslib message_runtime moveit_ros_planning_interface

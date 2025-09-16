@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu/ROS/roboarm3_ws/devel/setup.sh

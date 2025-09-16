@@ -1,0 +1,22 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~motor_state" : \b [str] 控制机械臂电机开启或关闭 min: , default: disable, max: 
+- \b "~arm_mode" : \b [str] 控制机械臂处于何种控制模式 min: , default: arm_sleep, max: 
+- \b "~Emergency_Stop" : \b [bool] 急停 min: False, default: False, max: True
+- \b "~drag_teachin" : \b [str] 拖动示教 min: , default: false, max: 
+- \b "~drag_teachin_name" : \b [str] 拖动示教存储文件名 min: , default: /home/ubuntu/ROS/roboarm3_ws/src/dm_motor/txt/drag_teachin_1.txt, max: 
+- \b "~joint1_angle" : \b [double] 关节1角度 min: -3.14, default: 0.0, max: 3.14
+- \b "~joint2_angle" : \b [double] 关节2角度 min: -3.14, default: 0.0, max: 3.14
+- \b "~joint3_angle" : \b [double] 关节3角度 min: -3.14, default: 0.0, max: 3.14
+- \b "~joint4_angle" : \b [double] 关节4角度 min: -3.14, default: 0.0, max: 3.14
+- \b "~joint5_angle" : \b [double] 关节5角度 min: -3.14, default: 0.0, max: 3.14
+- \b "~joint6_angle" : \b [double] 关节6角度 min: -3.14, default: 0.0, max: 3.14
+- \b "~arm_position_x" : \b [double] 末端x坐标 min: -0.5, default: 0.2, max: 0.5
+- \b "~arm_position_y" : \b [double] 末端y坐标 min: -0.5, default: 0.2, max: 0.5
+- \b "~arm_position_z" : \b [double] 末端z坐标 min: -0.6, default: 0.3, max: 0.7
+- \b "~arm_orientation_roll" : \b [double] 末端姿态roll角 min: -3.14, default: 0.0, max: 3.14
+- \b "~arm_orientation_pitch" : \b [double] 末端姿态pitch角 min: -3.14, default: 1.57, max: 3.14
+- \b "~arm_orientation_yaw" : \b [double] 末端姿态yaw角度 min: -3.14, default: 0.0, max: 3.14
+

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+ <launch>
+
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" output="screen"/>
+    
+    <node pkg="armcontrol_demo_pkg" type="armcontrol_demo" name="armcontrol_demo" output="screen"/>
+
+ </launch>

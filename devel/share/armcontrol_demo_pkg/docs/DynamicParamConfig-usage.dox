@@ -1,0 +1,23 @@
+\subsubsection usage Usage
+\verbatim
+<node name="armcontrol_demo_node" pkg="armcontrol_demo_pkg" type="armcontrol_demo_node">
+  <param name="motor_state" type="str" value="disable" />
+  <param name="arm_mode" type="str" value="arm_sleep" />
+  <param name="Emergency_Stop" type="bool" value="False" />
+  <param name="drag_teachin" type="str" value="false" />
+  <param name="drag_teachin_name" type="str" value="/home/ubuntu/ROS/roboarm3_ws/src/dm_motor/txt/drag_teachin_1.txt" />
+  <param name="joint1_angle" type="double" value="0.0" />
+  <param name="joint2_angle" type="double" value="0.0" />
+  <param name="joint3_angle" type="double" value="0.0" />
+  <param name="joint4_angle" type="double" value="0.0" />
+  <param name="joint5_angle" type="double" value="0.0" />
+  <param name="joint6_angle" type="double" value="0.0" />
+  <param name="arm_position_x" type="double" value="0.2" />
+  <param name="arm_position_y" type="double" value="0.2" />
+  <param name="arm_position_z" type="double" value="0.3" />
+  <param name="arm_orientation_roll" type="double" value="0.0" />
+  <param name="arm_orientation_pitch" type="double" value="1.57" />
+  <param name="arm_orientation_yaw" type="double" value="0.0" />
+</node>
+\endverbatim
+
