@@ -18,6 +18,17 @@ roslaunch 003_moveit_config combined_bringup.launch       //运行通信节点�
 roslaunch 003_moveit_config 003_bringup_moveit.launch     //运行仿真环境
 roslaunch armcontrol_demo_pkg armcontrol_demo.launch      // 运行UI界面
 
+## WebUI 控制机械臂
+
+部署新的网页控制界面后，可按照以下步骤启动：
+
+1. 在工作空间根目录执行 `catkin_make` 或 `catkin build` 完成编译。
+2. `source ./devel/setup.bash`
+3. 启动网页服务器：`roslaunch arm_webui webui.launch host:=0.0.0.0 port:=5000`
+4. 在局域网其他终端通过 `http://<本机IP>:5000` 访问页面，即可通过 6 个关节按钮和 XYZ 六方向按钮向 `/joy` 发布虚拟手柄消息。
+
+网页界面美观直观，支持设置动作幅度缩放，并完全兼容原有 `joy.py` 节点的逻辑。
+
 #查询串口设备，这里的*有可能是0、1、2...
 ls /dev/ttyACM*
 

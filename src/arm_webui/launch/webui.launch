@@ -1,0 +1,11 @@
+<launch>
+  <arg name="host" default="0.0.0.0"/>
+  <arg name="port" default="5000"/>
+  <arg name="frame_id" default="arm_webui"/>
+
+  <node pkg="arm_webui" type="webui_server.py" name="arm_webui_server" output="screen">
+    <param name="host" value="$(arg host)"/>
+    <param name="port" value="$(arg port)"/>
+    <param name="frame_id" value="$(arg frame_id)"/>
+  </node>
+</launch>
