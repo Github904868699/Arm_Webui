@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>arm_webui</name>
+  <version>0.0.1</version>
+  <description>Web-based teleoperation interface for the robotic arm.</description>
+  <maintainer email="todo@example.com">Arm WebUI Maintainer</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+
+  <exec_depend>python3-flask</exec_depend>
+</package>
